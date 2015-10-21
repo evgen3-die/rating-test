@@ -1,0 +1,16 @@
+<template name="websitePageTable">
+    <table>
+        <thead>
+        <tr>
+            <td>Дата</td>
+            <td>Посетители</td>
+            <td>Просмотры</td>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+                {{> websitePageTableItem}}
+            {{/each}}
+        </tbody>
+    </table>
+</template>

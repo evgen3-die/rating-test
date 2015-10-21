@@ -1,0 +1,25 @@
+table {
+    counter-reset: item;
+}
+
+tbody td:first-child::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+canvas {
+    width: 100%;
+    height: 500px;
+}

@@ -1,0 +1,18 @@
+<template name="websitesList">
+    <div class="row">
+        <table class="u-full-width">
+            <thead>
+            <tr>
+                <td></td>
+                <td>посетителей</td>
+                <td>просмотров</td>
+            </tr>
+            </thead>
+            <tbody>
+                {{#each websites}}
+                    {{> websiteItem}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
